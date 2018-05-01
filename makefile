@@ -48,7 +48,6 @@ OTHERFLAGS := --cap-add=NET_ADMIN --device /dev/net/tun
 PORTFLAGS  := #
 CACHEFLAGS := # --no-cache=true --pull
 NAMEFLAGS  := --name $(OPSYS)_$(CNTNAME) --hostname $(CNTNAME)
-PROXYFLAGS := # --build-arg http_proxy=$(http_proxy) --build-arg https_proxy=$(https_proxy) --build-arg no_proxy=$(no_proxy)
 RUNFLAGS   := -e PGID=$(PGID) -e PUID=$(PUID)
 
 # -- }}}
